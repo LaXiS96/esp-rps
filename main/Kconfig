@@ -1,0 +1,23 @@
+menu "App configuration"
+
+    config APP_GPIO_OUT_NUM
+        int "Output GPIO"
+        default 5
+
+    config APP_GPIO_IN_NUM
+        int "Input GPIO"
+        default 4
+
+    config APP_HTTPD_KEY
+        string "HTTP API key"
+        default "changeme"
+
+    config APP_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+
+    config APP_WIFI_PSK
+        string "WiFi pre-shared key"
+        default "mypassword"
+
+endmenu
